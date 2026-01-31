@@ -10,6 +10,28 @@ int sum(int n, int array[])
   return sum;
 }
 
+int majorityElement(int n, int arr[])
+{
+  int majority = arr[0];
+  for (int i = 0; i < n; i++)
+  {
+    int count = 0;
+    for (int j = 0; j < n; j++)
+    {
+
+      if (arr[j] == arr[i])
+      {
+        count++;
+      }
+    }
+    if (count > n / 2)
+    {
+      return arr[i];
+    }
+  }
+  return -1;
+}
+
 // Frequency Count Method can be used to get time complexity
 // sum = 0   O(1)
 // for loop   O(n+1)
@@ -31,7 +53,10 @@ int main()
     cin >> arr[i];
   }
 
-  int ans = sum(num, arr);
-  cout << endl;
-  cout << ans;
+  // int ans = sum(num, arr);
+  // cout << endl;
+  // cout << ans << endl;
+
+  int maj_element = majorityElement(num, arr);
+  cout << "Majoriyt ele is : " << maj_element << endl;
 }
