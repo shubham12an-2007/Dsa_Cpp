@@ -25,6 +25,10 @@ int main()
   // Criteria to analyze an algorithm
   //  1. Time , 2. Space , 3. Network consumption , 4. how much cpu registers it is cosnuming
 
+  // now for this swap program each assignment or variable consumes O(1) upar 3 variables in swap algo O(3)
+
+  // now space analysis  three varilabes are used so s(3) and space compelexity is also constant
+
   // cout << "Hello World";
   cout << "New to algorithms here" << endl;
 
