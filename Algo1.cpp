@@ -23,7 +23,7 @@ int main()
   // input 0 or more , output atleast 1  , definitness , finitiness , effectiveness
 
   // Criteria to analyze an algorithm
-  //  1. Time , 2. Space , 3.
+  //  1. Time , 2. Space , 3. Network consumption , 4. how much cpu registers it is cosnuming
 
   // cout << "Hello World";
   cout << "New to algorithms here" << endl;
